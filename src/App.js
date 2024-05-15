@@ -1,15 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'; // Import React
+import TodoList from './components/TodoList'; // Import the TodoList component
 
-import React from 'react';
-import TodoList from './components/TodoList';
-
+// Define the App component
 function App() {
   return (
     <div className="App">
-      <TodoList />
+      <TodoList /> {/* Render the TodoList component */}
     </div>
   );
 }
 
-export default App;
+export default App; // Export the App component as the default export

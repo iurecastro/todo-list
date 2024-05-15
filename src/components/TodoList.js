@@ -1,19 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import React and the useState hook
 
 const TodoList = () => {
-  const [tasks, setTasks] = useState([]);
-  const [task, setTask] = useState('');
+  const [tasks, setTasks] = useState([]); // State to store the list of tasks
+  const [task, setTask] = useState(''); // State to store the current task input
 
+  // Function to add a new task
   const handleAddTask = () => {
-    if (task.trim()) {
-      setTasks([...tasks, task]);
-      setTask('');
+    if (task.trim()) { // Check if the task is not empty
+      setTasks([...tasks, task]); // Add the new task to the tasks array
+      setTask(''); // Clear the input field
     }
   };
 
+  // Function to remove a task
   const handleRemoveTask = (index) => {
-    const newTasks = tasks.filter((_, i) => i !== index);
-    setTasks(newTasks);
+    const newTasks = tasks.filter((_, i) => i !== index); // Filter out the task by index
+    setTasks(newTasks); // Update the tasks state
   };
 
   return (
@@ -24,8 +26,8 @@ const TodoList = () => {
           type="text"
           className="form-control"
           placeholder="Enter a new task"
-          value={task}
-          onChange={(e) => setTask(e.target.value)}
+          value={task} // Set the input value from the task state
+          onChange={(e) => setTask(e.target.value)} // Update the task state as the user types
         />
         <button className="btn btn-primary" onClick={handleAddTask}>Add Task</button>
       </div>
@@ -41,4 +43,4 @@ const TodoList = () => {
   );
 };
 
-export default TodoList;
+export default TodoList; // Export the TodoList component as the default export
