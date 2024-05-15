@@ -29,5 +29,3 @@
 This project demonstrates how to create a simple to-do list application using React and Bootstrap, highlighting essential React concepts such as state management and event handling.
 
 ---
-
-This format is clearer and easier to read.
