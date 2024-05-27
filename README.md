@@ -28,4 +28,9 @@
 
 This project demonstrates how to create a simple to-do list application using React and Bootstrap, highlighting essential React concepts such as state management and event handling.
 
----
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+
+
+Developed by Iure Castro.
