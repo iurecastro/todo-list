@@ -1,5 +1,5 @@
 # todo-list
- To to list react js + bootstrap 
+ To to list React js + bootstrap 
 
 ---
 
